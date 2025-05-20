@@ -499,65 +499,124 @@ footer .bottom .links a{
 }
 
 @media screen and (max-width: 768px) {
-    
-    nav{
+    nav {
         justify-content: space-between;
-        padding: 0 42px;
+        padding: 0 24px;
+        box-shadow: 0 2px 16px rgba(94, 59, 238, 0.08);
+        border-radius: 16px;
+        margin: 12px;
     }
 
-    nav ul{
+    nav ul {
         display: none;
     }
 
-    nav.open .logo{
+    nav.open .logo {
         display: none;
     }
 
-    nav.open ul{
+    nav.open ul {
         display: flex;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(94, 59, 238, 0.10);
+        padding: 16px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        margin: 0 24px;
+        flex-direction: column;
+        gap: 18px;
+        z-index: 100;
     }
 
-    nav button#menuButton{
+    nav button#menuButton {
         display: flex;
+        background: linear-gradient(90deg, #5e3bee 60%, #00c6fb 100%);
+        color: #fff;
+        border: none;
+        box-shadow: 0 2px 8px rgba(94, 59, 238, 0.15);
+        border-radius: 8px;
+        padding: 10px 14px;
+        font-size: 26px;
+        transition: background 0.3s;
+    }
+    nav button#menuButton:hover {
+        background: linear-gradient(90deg, #00c6fb 60%, #5e3bee 100%);
     }
 
-    .main{
-        padding: 42px;
+    .main {
+        padding: 32px 12px;
+        border-radius: 18px;
+        box-shadow: 0 4px 32px rgba(94, 59, 238, 0.07);
+        background: linear-gradient(120deg, #deebee 80%, #f7f7ff 100%);
     }
 
-    .skills{
-        padding: 85px 42px 0;
+    .skills {
+        padding: 60px 12px 0;
     }
 
-    .skills .skill-items{
-        gap: 8px;
+    .skills .skill-items {
+        gap: 16px;
     }
 
-    .about{
-        padding: 85px 42px;
+    .skills .skill-items .item {
+        border-radius: 16px;
+        box-shadow: 0 2px 16px rgba(94, 59, 238, 0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .skills .skill-items .item:hover {
+        transform: translateY(-4px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(94, 59, 238, 0.15);
     }
 
-    .portfolio{
-        padding: 60px 42px;
+    .about {
+        padding: 60px 12px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 2px 16px rgba(94, 59, 238, 0.06);
     }
 
-    .portfolio .portfo-items{
+    .portfolio {
+        padding: 40px 12px;
+        background: linear-gradient(120deg, #deebee 80%, #f7f7ff 100%);
+        border-radius: 18px;
+        box-shadow: 0 2px 16px rgba(94, 59, 238, 0.06);
+    }
+
+    .portfolio .portfo-items {
         gap: 18px;
     }
 
-    .feedback{
-        padding: 85px 42px;
+    .portfolio .portfo-items .item {
+        border-radius: 16px;
+        box-shadow: 0 2px 16px rgba(94, 59, 238, 0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .portfolio .portfo-items .item:hover {
+        transform: translateY(-4px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(94, 59, 238, 0.15);
     }
 
-    footer{
-        padding: 85px 42px;
+    .feedback {
+        padding: 60px 12px;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 2px 16px rgba(94, 59, 238, 0.06);
     }
 
-    footer .bottom{
+    footer {
+        padding: 60px 12px;
+        border-radius: 18px 18px 0 0;
+        background: linear-gradient(120deg, #deebee 80%, #f7f7ff 100%);
+        box-shadow: 0 -2px 16px rgba(94, 59, 238, 0.06);
+    }
+
+    footer .bottom {
         flex-direction: column-reverse;
-        gap: 14px;
+        gap: 18px;
     }
-
 }
 
 @media screen and (max-width: 576px) {
